@@ -26,30 +26,27 @@ body {
 
 
 /*SLIDER*/
+.bg-testimonial {
+  background: linear-gradient(130deg, #07d9a3, #048fee);
+  background-size: 400% 400%;
 
-.carousel-inner .carousel-item .img-box{
-	width: 135px;
-	height: 135px;
+  -webkit-animation: gradient 16s ease infinite;
+  -moz-animation: gradient 16s ease infinite;
+  animation: gradient 16s ease infinite;
 }
-.carousel-control-prev{
-	left: -100px;
+
+@-webkit-keyframes gradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
 }
-.carousel-control-next{
-	right: -100px;
+@-moz-keyframes gradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
 }
-.carousel-indicators{
-	top: 320px;
+@keyframes gradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
 }
-@media (min-width: 320px) and (max-width: 640px) {
-	.carousel-inner .carousel-item p{
-		font-size: 14px;
-	}
-	.carousel-control-prev{
-		left: -40px;
-	}
-	.carousel-control-next{
-		right: -40px;
-	}
- 	.carousel-indicators{
-		top: 400px;
-	}
