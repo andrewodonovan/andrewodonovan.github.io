@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <header>
+        <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+                <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+                <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url({% static "img/slide1.jpg" %})" ;
+                ">
+                <div class="carousel-caption d-none d-md-block">
+                    <!--            <h3>First Slide</h3>-->
+                    <!--            <p>This is a description for the first slide.</p>-->
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <!--        <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">-->
+            <!--          <div class="carousel-caption d-none d-md-block">-->
+            <!--            <h3>Second Slide</h3>-->
+            <!--            <p>This is a description for the second slide.</p>-->
+            <!--          </div>-->
+            <!--        </div>-->
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <!--        <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">-->
+            <!--          <div class="carousel-caption d-none d-md-block">-->
+            <!--            <h3>Third Slide</h3>-->
+            <!--            <p>This is a description for the third slide.</p>-->
+            <!--          </div>-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+        <section>
+            <div class="row bg-light">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-4">
+                    <video controls height="100%" width="100%">
+                        <source src="{% static "img/home_vid.mp4" %}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-4">
+                    <div class="p-1">
+                        <h1>Login2Learn</h1>
+                    </div>
+                    <div class="p-1">
+                        <p class="text-justify text-wrap">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula, imperdiet
+                            sit
+                            amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec ultricies. Praesent quis
+                            neque dignissim, congue lorem nec, egestas metus. Duis eleifend lectus in mi molestie
+                            imperdiet.
+                            In hac habitasse platea dictumst. Sed convallis justo vel erat accumsan pellentesque.
+                            Vivamus
+                            eget sapien imperdiet, mattis diam dignissim, bibendum nisl. In tempus erat et elit interdum
+                            luctus. Nulla vestibulum scelerisque nisi.
+                        </p>
+                        <p class="text-justify text-wrap">
+                            Nam vulputate, purus ut rutrum mattis, elit justo tincidunt justo, vel varius dolor purus eu
+                            tellus. Maecenas efficitur nisl viverra condimentum blandit. Nulla pharetra ornare enim. Sed
+                            id
+                            tempus magna. Donec tristique congue elementum. Morbi faucibus mauris diam, et varius eros
+                            vehicula sed. Nunc eros ipsum, tempus et ligula at, iaculis pellentesque risus. Duis
+                            ullamcorper
+                            ex id enim posuere, at fringilla eros suscipit. Duis iaculis sapien sit amet sagittis
+                            lobortis.
+                            Pellentesque vulputate, dui ut egestas varius, massa odio maximus mauris, et auctor ante dui
+                            sit
+                            amet erat. Mauris aliquam nisl felis, in rhoncus lacus auctor id.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                    <div class="p-4">
+                        <div class="rounded bg-warning shadow p-3">
+                            <div>
+                                <h2 class="text-justify">Sign Up Now</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula,
+                                    imperdiet sit amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec
+                                    ultricies.</p>
+                            </div>
+                            <div class="p-2">
+                                <btn class="btn btn-success">Sign Up</btn>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row bg-light">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto align-items-center">
+                    <div class="p-2">
+                        <h1 class="text-center">What We Do</h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 p-4">
+                    <div class="p-3">
+                        <div>
+                            <a href="#"><img alt="" class="card-img-top" src="http://placehold.it/700x400"></a>
+                        </div>
+                        <div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula,
+                                imperdiet
+                                sit amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec ultricies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 p-4">
+                    <div class="p-3">
+                        <div>
+                            <a href="#"><img alt="" class="card-img-top" src="http://placehold.it/700x400"></a>
+                        </div>
+                        <div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula,
+                                imperdiet
+                                sit amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec ultricies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 p-4">
+
+                    <div class="p-3">
+                        <div>
+                            <a href="#"><img alt="" class="card-img-top" src="http://placehold.it/700x400"></a>
+                        </div>
+                        <div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula,
+                                imperdiet
+                                sit amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec ultricies.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 p-4">
+
+                    <div class="p-3">
+                        <div>
+                            <a href="#"><img alt="" class="card-img-top" src="http://placehold.it/700x400"></a>
+                        </div>
+                        <div>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis ligula,
+                                imperdiet
+                                sit amet molestie quis, facilisis eu est. Mauris ultrices eget ante nec ultricies.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </div>
+{% endblock %}
+<!-- /.container -->
+
+
