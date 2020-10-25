@@ -26,7 +26,7 @@ SECRET_KEY = 'lc+=ioy)612sm%9-q2v8btj)z@=k0xz2(z=skam*=bf4coyu!!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://login2learn.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['https://login2learn.herokuapp.com/', '127.00.1']
 
 
 # Application definition
