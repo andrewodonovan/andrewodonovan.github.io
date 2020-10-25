@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('home.urls')), # new
     path('about/', include('about.urls')), # new
     path('membership/', include('membership.urls')), # new
+    path('subject/', include('subject.urls')), # new
 ]
