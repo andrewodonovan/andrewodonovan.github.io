@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['https://login2learn.herokuapp.com/', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -138,7 +139,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -151,6 +151,12 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'andrewodonovan97@gmail.com'
+EMAIL_HOST_PASSWORD = '@HillRose3!!'
+EMAIL_PORT = 587
 
 
 # Static files (CSS, JavaScript, Images)
@@ -169,3 +175,4 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+
